@@ -134,7 +134,7 @@ with tab1:
 
 with tab2:
     st.header("Climate Trends Analysis")
-    dates = pd.date_range(start='2023-01-01', periods=12, freq='M')
+    dates = pd.date_range(start='2023-01-01', periods=12, freq='ME')
     temp_trend = np.random.normal(0, 2, 12).cumsum() + 10
     
     fig = go.Figure()
